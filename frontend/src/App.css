@@ -47,7 +47,7 @@ body {
 }
 
 .app-main {
-  max-width: 640px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 24px 80px;
 }
@@ -146,16 +146,18 @@ body {
 
 .favorites-box {
   margin-top: 24px;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
   border-radius: 16px;
-  color: #333;
+  color: #fff;
 }
 
 .favorites-box h3 {
-  color: #333;
+  color: #fff;
   margin: 0 0 14px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .favorites-list {
@@ -169,8 +171,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  color: #333;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
   font-size: 14px;
 }
 
