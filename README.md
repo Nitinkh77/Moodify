@@ -25,3 +25,51 @@
 - pydantic-settings for configuration
 
 ## Project structure
+moodify/
+├── frontend/          # React app
+├── backend/           # FastAPI app
+│   └── app/
+│       ├── api/       # Routes (auth, dashboard, main routes)
+│       ├── core/      # Config, database, security
+│       ├── models/    # Pydantic schemas
+│       └── services/  # Emotion detection & music lookup logic
+└── README.md
+## Running locally
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+Create a `.env` file in the backend root:
+Then run:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Emotion → Mood mapping
+
+| Emotion | Playlist |
+|---|---|
+| Happy | Good Vibes Only ☀️ |
+| Sad | Dil Ka Dard 🌧️ |
+| Angry | Aag Laga Do 🔥 |
+| Fearful | Sukoon 🌿 |
+| Surprised | Surprise Twist! ⚡ |
+| Disgusted | Chill Karo 🎧 |
+| Neutral | Apna Zone 🎵 |
+
+## License
+
+Personal project — not currently licensed for reuse.
